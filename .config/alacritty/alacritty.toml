@@ -1,0 +1,20 @@
+[font]
+size = 14.0
+
+[font.normal]
+#family = "SFMono Nerd Font"
+family = "FiraCode"
+style = "Medium"
+
+[terminal.shell]
+program = "/bin/fish"
+
+[window]
+opacity = 0.80
+
+[window.padding]
+x = 15
+y = 15
+
+[env]
+term = "xterm-256color"
