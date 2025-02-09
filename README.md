@@ -6,43 +6,25 @@ This repository contains my personal dotfiles, forked from [mylinuxforwork/dotfi
 
 Before using my dotfiles, make sure to first check out and set up [mylinuxforwork/dotfiles](https://github.com/mylinuxforwork/dotfiles), as my configuration builds upon it.
 
-<!-- ## Screenshots
 
-![Waybar](./screenshots/waybar.jpg)
-
-![Workflow](./screenshots/workflow.jpg)
-
-![Hyprlock 2](./screenshots/hyprlock-2.jpg)
-
-![Arch 3](./screenshots/arch-3.jpg)
-
-![Hyprlock 1](./screenshots/hyprlock-1.jpg)
-
-
-![Hyprlock 3](./screenshots/hyprlock-3.jpg)
-
-![Arch 1](./screenshots/arch-1.jpg)
-
-![Arch 2](./screenshots/arch-2.jpg) -->
-## Screenshots Gallery 📸
+## Screenshots
 
 <table>
   <tr>
-    <td><img src="./screenshots/waybar.jpg" width="400"></td>
-    <td><img src="./screenshots/workflow.jpg" width="400"></td>
-    <td><img src="./screenshots/hyprlock-2.jpg" width="400"></td>
+    <td><img src="./screenshots/waybar.jpg" width="500"></td>
+    <td><img src="./screenshots/workflow.jpg" width="500"></td>
   </tr>
   <tr>
-    <td><img src="./screenshots/arch-3.jpg" width="400"></td>
-    <td><img src="./screenshots/hyprlock-1.jpg" width="400"></td>
-    <td><img src="./screenshots/hyprlock-3.jpg" width="400"></td>
+    <td><img src="./screenshots/hyprlock-2.jpg" width="500"></td>
+    <td><img src="./screenshots/arch-3.jpg" width="500"></td>
   </tr>
   <tr>
-    <td><img src="./screenshots/arch-1.jpg" width="400"></td>
-    <td><img src="./screenshots/arch-2.jpg" width="400"></td>
-    <td></td>
+    <td><img src="./screenshots/hyprlock-1.jpg" width="500"></td>
+    <td><img src="./screenshots/hyprlock-3.jpg" width="500"></td>
   </tr>
-</table>
+  <tr>
+    <td><img src="./screenshots/arch-1.jpg" width="500"></td>
+    <td><img src="./scre
 
 
 ## Features
