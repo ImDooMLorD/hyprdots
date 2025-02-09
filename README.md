@@ -13,6 +13,7 @@ Before using my dotfiles, make sure to first check out and set up [mylinuxforwor
 - **Fish Shell** - Customized with useful aliases, prompts, and plugin support.
 - **Tmux** - Personalized configuration for improved window and session management.
 - **Waybar** - Tweaked for an enhanced status bar experience in Wayland environments.
+- **Hyprlock** - Custom lock screen configuration based on [this gist](https://gist.github.com/ashish-kus/dd562b0bf5e8488a09e0b9c289f4574c).
 
 ## Installation
 
@@ -35,6 +36,7 @@ Before using my dotfiles, make sure to first check out and set up [mylinuxforwor
    ln -s ~/.dotfiles/fish ~/.config/fish
    ln -s ~/.dotfiles/tmux ~/.tmux.conf
    ln -s ~/.dotfiles/waybar ~/.config/waybar
+   ln -s ~/.dotfiles/hyprlock ~/.config/hypr/hyprlock.conf
    ```
 
 ## Customization
@@ -44,6 +46,7 @@ Feel free to explore the configuration files and tweak them according to your ne
 ## Credits
 
 - Original repository: [mylinuxforwork/dotfiles](https://github.com/mylinuxforwork/dotfiles)
+- Hyprlock configuration based on [this gist](https://gist.github.com/ashish-kus/dd562b0bf5e8488a09e0b9c289f4574c)
 
 ## License
 
