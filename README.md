@@ -11,20 +11,18 @@ Before using my dotfiles, make sure to first check out and set up [mylinuxforwor
 
 <table>
   <tr>
-    <td><img src="./screenshots/waybar.jpg" width="500"></td>
-    <td><img src="./screenshots/workflow.jpg" width="500"></td>
+    <td><img src="./screenshots/arch-1.jpg" width="500"></td>
+    <td><img src="./screenshots/arch-2.jpg" width="500"></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/arch-3.jpg" width="500"></td>
+    <td><img src="./screenshots/hyprlock-1.jpg" width="500"></td>
   </tr>
   <tr>
     <td><img src="./screenshots/hyprlock-2.jpg" width="500"></td>
-    <td><img src="./screenshots/arch-3.jpg" width="500"></td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/hyprlock-1.jpg" width="500"></td>
     <td><img src="./screenshots/hyprlock-3.jpg" width="500"></td>
   </tr>
-  <tr>
-    <td><img src="./screenshots/arch-1.jpg" width="500"></td>
-    <td><img src="./scre
+</table>
 
 
 ## Features
