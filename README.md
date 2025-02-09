@@ -6,6 +6,45 @@ This repository contains my personal dotfiles, forked from [mylinuxforwork/dotfi
 
 Before using my dotfiles, make sure to first check out and set up [mylinuxforwork/dotfiles](https://github.com/mylinuxforwork/dotfiles), as my configuration builds upon it.
 
+<!-- ## Screenshots
+
+![Waybar](./screenshots/waybar.jpg)
+
+![Workflow](./screenshots/workflow.jpg)
+
+![Hyprlock 2](./screenshots/hyprlock-2.jpg)
+
+![Arch 3](./screenshots/arch-3.jpg)
+
+![Hyprlock 1](./screenshots/hyprlock-1.jpg)
+
+
+![Hyprlock 3](./screenshots/hyprlock-3.jpg)
+
+![Arch 1](./screenshots/arch-1.jpg)
+
+![Arch 2](./screenshots/arch-2.jpg) -->
+## Screenshots Gallery 📸
+
+<table>
+  <tr>
+    <td><img src="./screenshots/waybar.jpg" width="400"></td>
+    <td><img src="./screenshots/workflow.jpg" width="400"></td>
+    <td><img src="./screenshots/hyprlock-2.jpg" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/arch-3.jpg" width="400"></td>
+    <td><img src="./screenshots/hyprlock-1.jpg" width="400"></td>
+    <td><img src="./screenshots/hyprlock-3.jpg" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/arch-1.jpg" width="400"></td>
+    <td><img src="./screenshots/arch-2.jpg" width="400"></td>
+    <td></td>
+  </tr>
+</table>
+
+
 ## Features
 
 - **Neovim** - Tailored with custom keybindings, plugins, and a streamlined workflow.
@@ -47,10 +86,6 @@ Feel free to explore the configuration files and tweak them according to your ne
 
 - Original repository: [mylinuxforwork/dotfiles](https://github.com/mylinuxforwork/dotfiles)
 - Hyprlock configuration based on [this gist](https://gist.github.com/ashish-kus/dd562b0bf5e8488a09e0b9c289f4574c)
-
-## License
-
-This project follows the same license as the original repository. See `LICENSE` for details.
 
 ---
 
