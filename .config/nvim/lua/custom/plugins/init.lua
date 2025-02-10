@@ -8,9 +8,6 @@ return {
     'ThePrimeagen/vim-be-good',
   },
   {
-    'BlackCapCoder/scrimba-vim',
-  },
-  {
     'christoomey/vim-tmux-navigator',
     lazy = false,
   },

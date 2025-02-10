@@ -238,3 +238,4 @@ if type -q tmux
         tmux new-session -s $new_session
     end
 end
+
