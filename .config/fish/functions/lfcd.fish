@@ -1,7 +1,12 @@
 function lfcd --wraps="lf" --description="lf - Terminal file manager (changing directory on exit)"
-    set -l last_dir (command lf -print-last-dir $argv)
+    set -l tmp (mktemp)
+    command lf -last-dir-path "$tmp" $argv
 
-    # Ensure last_dir is not empty before attempting to change directory
+    # Read the last directory from the temp file
+    set -l last_dir (cat "$tmp")
+    rm -f "$tmp"
+
+    # Ensure last_dir is valid before changing directory
     if test -n "$last_dir" && test -d "$last_dir"
         cd "$last_dir"
     end
