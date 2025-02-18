@@ -32,7 +32,7 @@
         "dnd",
         "buttons-grid",
         "mpris",
-        "volume", 
+        "volume",
         "backlight",
         "title",
         "notifications"
@@ -64,7 +64,7 @@
             "actions": [
                 {
                     "label": "",
-                    "command": "bash -c $HOME/.config/hypr/scripts/power.sh lock"
+                    "command": "hyprlock"
                 },
                 {
                     "label": "󰝟",
