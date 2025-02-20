@@ -241,5 +241,6 @@ end
 
 #Keybinding to open lfcd with ctrl+o
 function fish_user_key_bindings
-    bind \co 'lfcd; commandline -f repaint'
+    bind \co 'stty sane; lfcd'
 end
+

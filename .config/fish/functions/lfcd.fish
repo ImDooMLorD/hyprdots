@@ -10,4 +10,8 @@ function lfcd --wraps="lf" --description="lf - Terminal file manager (changing d
     if test -n "$last_dir" && test -d "$last_dir"
         cd "$last_dir"
     end
+
+    # Simulate an Enter keypress
+    commandline -f execute
 end
+

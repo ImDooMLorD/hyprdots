@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 set previewer ~/.config/lf/previewer
 
@@ -98,6 +98,8 @@ cmd z-jump ${{
 map Z push :z-jump<space>-I<space>
 map zb push :z-jump<space>-b<space>
 map zz push :z-jump<space>
+
+map <c-o> shell exec fish -c 'lfcd'
 
 # Bindings
 map c
