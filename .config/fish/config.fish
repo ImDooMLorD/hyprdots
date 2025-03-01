@@ -1,6 +1,5 @@
 
 
-
 ## Set values
 # Hide welcome message & ensure we are reporting fish as shell
 set fish_greeting
@@ -117,6 +116,45 @@ end
 #end
 
 
+# Skip tmux when opening from Thunar
+if test -n "$THUNAR_NO_TMUX"
+    exit
+end
+
+#Attach tmux to fish shell on startup
+if type -q tmux
+    if not set -q TMUX
+        # Ensure "default" session exists
+        if ! tmux has-session -t default 2>/dev/null
+            tmux new-session -d -s default
+        end
+
+        # Check if "default" has NO attached clients, then attach
+        if test (tmux list-clients -t default 2>/dev/null | wc -l) -eq 0
+            tmux attach-session -t default
+            exit
+        end
+
+        # Find an unused session (a session with NO attached clients)
+        for session in (tmux list-sessions -F "#{session_name}" 2>/dev/null)
+            if test (tmux list-clients -t $session 2>/dev/null | wc -l) -eq 0
+                tmux attach-session -t $session
+                exit
+            end
+        end
+
+        # If all sessions are busy, create a new one with a unique name
+        set new_session "session_"(date +%s)
+        tmux new-session -s $new_session
+    end
+end
+
+#Keybinding to open lfcd with ctrl+o
+function fish_user_key_bindings
+    bind \co 'stty sane; lfcd'
+end
+
+
 # Common use
 alias .. 'cd ..'
 alias ... 'cd ../..'
@@ -205,42 +243,4 @@ alias gcredential="git config credential.helper store"
 # -----------------------------------------------------
 cat ~/.cache/wal/sequences
 
-
-# Skip tmux when opening from Thunar
-if test -n "$THUNAR_NO_TMUX"
-    exit
-end
-
-#Attach tmux to fish shell on startup
-if type -q tmux
-    if not set -q TMUX
-        # Ensure "default" session exists
-        if ! tmux has-session -t default 2>/dev/null
-            tmux new-session -d -s default
-        end
-
-        # Check if "default" has NO attached clients, then attach
-        if test (tmux list-clients -t default 2>/dev/null | wc -l) -eq 0
-            tmux attach-session -t default
-            exit
-        end
-
-        # Find an unused session (a session with NO attached clients)
-        for session in (tmux list-sessions -F "#{session_name}" 2>/dev/null)
-            if test (tmux list-clients -t $session 2>/dev/null | wc -l) -eq 0
-                tmux attach-session -t $session
-                exit
-            end
-        end
-
-        # If all sessions are busy, create a new one with a unique name
-        set new_session "session_"(date +%s)
-        tmux new-session -s $new_session
-    end
-end
-
-#Keybinding to open lfcd with ctrl+o
-function fish_user_key_bindings
-    bind \co 'stty sane; lfcd'
-end
 
