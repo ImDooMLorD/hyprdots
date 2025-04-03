@@ -7,7 +7,7 @@ family = "FiraCode"
 style = "Medium"
 
 [terminal.shell]
-program = "/bin/fish"
+program = "/bin/bash"
 
 [window]
 opacity = 0.80
