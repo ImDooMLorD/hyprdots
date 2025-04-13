@@ -123,19 +123,19 @@
  // ChatGPT Launcher
  "custom/chatgpt": {
   "format": " ",
-  "on-click": "$(cat ~/.config/ml4w/settings/browser.sh) --new-window https://chat.openai.com",
+  "on-click": "chromium --ozone-platform=wayland --app=https://chat.openai.com",
   "tooltip-format": "AI Support"
 },
 // Gemini Launcher
 "custom/gemini": {
   "format": " ",
-  "on-click": "$(cat ~/.config/ml4w/settings/browser.sh) --new-window https://gemini.google.com/app",
+  "on-click": "chromium --ozone-platform=wayland --app=https://gemini.google.com/app",
   "tooltip": false
 },
 // Copilot Launcher
 "custom/copilot": {
   "format": " ",
-  "on-click": "$(cat ~/.config/ml4w/settings/browser.sh) --new-window https://copilot.microsoft.com",
+  "on-click": "chromium --ozone-platform=wayland --app=https://copilot.microsoft.com",
   "tooltip": false
 },
 
