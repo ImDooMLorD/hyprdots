@@ -1,2 +1,2 @@
 #!/bin/bash
-theme_name="minimal custom 1"
+theme_name="Minimal Custom"

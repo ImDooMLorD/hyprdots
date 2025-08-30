@@ -66,7 +66,7 @@
     "format": ""
   },
 
-    // Tools
+  // Tools
   "custom/tools": {
     "format": "",
     "tooltip-format": "Tools"
@@ -120,25 +120,25 @@
     "on-click": "~/.config/hypr/scripts/keybindings.sh",
     "tooltip": false
   },
- // ChatGPT Launcher
- "custom/chatgpt": {
-  "format": " ",
-  "on-click": "chromium --ozone-platform=wayland --app=https://chat.openai.com",
-  "tooltip-format": "AI Support"
-},
-// Gemini Launcher
-"custom/gemini": {
-  "format": " ",
-  "on-click": "chromium --ozone-platform=wayland --app=https://gemini.google.com/app",
-  "tooltip": false
-},
-// Copilot Launcher
-"custom/copilot": {
-  "format": " ",
-  "on-click": "chromium --ozone-platform=wayland --app=https://copilot.microsoft.com",
-  "tooltip": false
-},
 
+  // ChatGPT Launcher
+  "custom/chatgpt": {
+    "format": " ",
+    "on-click": "chromium --ozone-platform=wayland --app=https://chat.openai.com",
+    "tooltip-format": "AI Support"
+  },
+  // Gemini Launcher
+  "custom/gemini": {
+    "format": " ",
+    "on-click": "chromium --ozone-platform=wayland --app=https://gemini.google.com/app",
+    "tooltip": false
+  },
+  // Copilot Launcher
+  "custom/copilot": {
+    "format": " ",
+    "on-click": "chromium --ozone-platform=wayland --app=https://copilot.microsoft.com",
+    "tooltip": false
+  },
 
   // Calculator
   "custom/calculator": {
@@ -185,17 +185,13 @@
     "tooltip-format": "Left: Notifications\nRight: Do not disturb",
     "format": "{icon}",
     "format-icons": {
-      "notification":
-        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "none": "",
-      "dnd-notification":
-        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "dnd-notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "dnd-none": "",
-      "inhibited-notification":
-        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "inhibited-notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "inhibited-none": "",
-      "dnd-inhibited-notification":
-        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "dnd-inhibited-notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "dnd-inhibited-none": ""
     },
     "return-type": "json",
@@ -244,7 +240,7 @@
 
   // Clock
   "clock": {
-    "format": "{:%I:%M %p %a}",
+    "format": "{:%H:%M %a}",
     "on-click": "flatpak run com.ml4w.calendar",
     "timezone": "",
     "tooltip": false
@@ -326,11 +322,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": true
     },
-    "modules": [
-      "custom/settings",
-      "custom/waybarthemes",
-      "custom/wallpaper"
-    ]
+    "modules": ["custom/settings", "custom/waybarthemes", "custom/wallpaper"]
   },
 
   // Network
@@ -345,7 +337,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
     "on-click": "~/.config/ml4w/settings/networkmanager.sh",
-    "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle",
+    "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle"
   },
 
   // Battery
