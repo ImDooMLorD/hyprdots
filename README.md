@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles (Legacy I use Quickshell now )
 
 This repository contains my personal dotfiles, forked from [mylinuxforwork/dotfiles](https://github.com/mylinuxforwork/dotfiles) and customized to fit my workflow. These configurations enhance my terminal experience by optimizing Neovim, Kitty, Fish shell, Tmux, and Waybar to work seamlessly together.
 
